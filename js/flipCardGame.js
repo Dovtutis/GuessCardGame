@@ -59,10 +59,22 @@ function openCard (event) {
     if (delayTrigger) {
         if (trigger1) {
             event.path[2].style.transform = "rotateY(180deg)"
-            openCardTrigger++
             let id = event.path[3].id
-            selectedCards.push(id)
-            console.log(selectedCards)
+
+            if (selectedCards.length === 0) {
+                selectedCards.push(id)
+                console.log(selectedCards)
+                openCardTrigger++
+                return
+            }
+            console.log(selectedCards[0])
+            console.log(id)
+
+            if (selectedCards[0] !== id) {
+                selectedCards.push(id)
+                console.log(selectedCards)
+                openCardTrigger++
+            }
         }
 
         if (openCardTrigger === 2){
