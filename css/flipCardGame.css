@@ -1,0 +1,122 @@
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.display_flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.spaceAround {
+    justify-content: space-around;
+}
+
+.spaceBetween {
+    justify-content: space-between;
+}
+
+.align-self-end {
+    align-self: end;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.positionRelative {
+    position: relative;
+}
+
+.textAlignCenter {
+    text-align: center;
+}
+
+#gameScreen {
+    background-color: #999898;
+    width: 1850px;
+    height: 900px;
+    border-radius: 25px;
+    margin: 20px;
+}
+
+.imgSize {
+    width: 170px;
+    height: 250px;
+}
+
+
+.flip-card {
+    background-color: transparent;
+    width: 170px;
+    height: 250px;
+    margin: 10px;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    cursor: pointer;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+
+}
+
+.flip-card-back {
+    transform: rotateY(180deg);
+    cursor: pointer;
+}
+
+#cardColor {
+    background-color: red;
+}
+
+#timerBox {
+    width: 1850px;
+    height: 30px;
+    margin: 10px 20px;
+    background-color: #5AA0F6;
+    border-radius: 15px;
+    line-height: 30px;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: "Oswald", sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
