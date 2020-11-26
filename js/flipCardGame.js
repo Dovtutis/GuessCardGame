@@ -37,7 +37,7 @@ function startGame () {
         colors.splice(randomNumber, 1);
     }
 
-    timeCounter = 10
+    timeCounter = 120
     myTimerF ()
 
 }
