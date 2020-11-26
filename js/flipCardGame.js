@@ -7,6 +7,7 @@ let colors = []
 let selectedCards = []
 let delayTrigger = true
 let timeCounter
+let interval
 const gameScreen = document.getElementById("gameScreen")
 const timer = document.getElementById('timer')
 
@@ -36,7 +37,7 @@ function startGame () {
         colors.splice(randomNumber, 1);
     }
 
-    timeCounter = 120
+    timeCounter = 10
     myTimerF ()
 
 }
@@ -111,11 +112,12 @@ function myTimerF () {
         return `${minutes}:${seconds}`
     }
 
-    setInterval(()=>{
+    interval = setInterval(()=>{
         timer.innerText = myTimerFunction(timeCounter)
         timeCounter--
         if (timeCounter === 0) {
             alert("TIME IS UP, YOU LOST!")
+            clearInterval(interval)
             startGame()
         }
     },1000)
