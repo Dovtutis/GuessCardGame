@@ -41,7 +41,6 @@
 
 #gameScreen {
     background-color: #999898;
-    width: 1850px;
     border-radius: 25px;
     margin: 20px;
 }
@@ -88,7 +87,7 @@
 }
 
 #timerBox {
-    width: 1850px;
+    width: 100%
     height: 30px;
     margin: 10px 20px;
     background-color: #5AA0F6;
